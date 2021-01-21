@@ -43,5 +43,5 @@
 - **Q: Fabric相关的代码仓库迁移到github这个过程的现状**
     - 已经完成
 - **Q: Fabric 的国密改造案例**
-    - TWGC Fabric国密小组收集了众多的[已知开源改造案例]（https://github.com/Hyperledger-TWGC/fabric-gm-wiki/wiki/%E5%B7%B2%E7%9F%A5%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE）
-    - TWGC Fabric国密小组正采取一种完全不同的路线来统一Fabric国密改造
+    - TWGC Fabric国密小组收集了众多的[已知开源改造案例](https://github.com/Hyperledger-TWGC/fabric-gm-wiki/wiki/%E5%B7%B2%E7%9F%A5%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE)
+    - TWGC Fabric国密小组正采取一种完全不同的路线来统一Fabric国密改造，[欢迎贡献](https://github.com/Hyperledger-TWGC/fabric-gm-wiki)
