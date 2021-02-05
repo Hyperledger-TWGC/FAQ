@@ -31,7 +31,7 @@
     - 调用者属于客户端，一般情况看不到服务端的链码逻辑。如果客户端获得了权限且peer开启了生命周期链码，可以通过lscc的api获取链码数据
 - **Q: Fabric网络完全启动后，不停止网络的情况下，能够完成排序服务的切换吗？比如卡夫卡切换为solo**
     - kafka切换为solo暂时不支持，但是从1.4.2开始，官方文档提供了将kafka切换成RAFT（etcdraft）的方法，此外，社区推荐用单节点的etcdraft配置来取代solo的配置
-- **我们每次初始化或者升级chaincode的时候，都会新建一个新的链码 docker 镜像和容器，如果我们想定制化默认的链码镜像，比如预先安装一些其他应用，使得初始化的时候有一个预期的环境， 我们应该如何做？镜像的Dockerfile在哪里呢？**
+- **Q: 我们每次初始化或者升级chaincode的时候，都会新建一个新的链码 docker 镜像和容器，如果我们想定制化默认的链码镜像，比如预先安装一些其他应用，使得初始化的时候有一个预期的环境， 我们应该如何做？镜像的Dockerfile在哪里呢？**
     - 每个类别的链码（Go, Java, Nodejs）有着对应的Dockerfile。不过Dockerfile的内容实际上是内嵌在节点二进制程序文件里面的，因此除非修改节点程序本身，否则你无法修改Dockerfile的内容。在接下来2.0的版本里，你将会可以构建你自己的链码启动器，因此，将可以如你所愿的任何方式来构建/部署链码。 实际上与此同时，你既可以修改用于构建链码的镜像，也可以修改用于运行链码的镜像
     - 关于构造：
         - 在1.4.x的版本中，Go和Nodejs的链码是用fabric-ccenv的镜像来构建的（你可以在Fabric源码中images/ccenv目录下找到Dockerfile）。如果你构建时需要任何额外的库，你可以基于fabric-ccenv来构建自己的镜像。要特别注意的是，对Go链码来说我们只会采用编译后的二进制链码文件，该文件是在实际的链码容器里构建和使用的。类似地，Nodejs链码中我们采用的是已安装的node 应用（包含node_modules）.通过设置peer 配置文件里chaincode.builder属性，你可以指定你自己的链码构造器为你定制的镜像。特别要注意的是java实际上是用"chaincode.java.runtime"镜像来构造的（你可以在fabric-chaincode-java代码仓库里找到fabric-javaenv）。
@@ -45,5 +45,5 @@
 - **Q: Fabric 的国密改造案例**
     - TWGC Fabric国密小组收集了众多的[已知开源改造案例](https://github.com/Hyperledger-TWGC/fabric-gm-wiki/wiki/%E5%B7%B2%E7%9F%A5%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE)
     - TWGC Fabric国密小组正采取一种完全不同的路线来统一Fabric国密改造，[欢迎贡献](https://github.com/Hyperledger-TWGC/fabric-gm-wiki)
-- **根据Fabric官方文档，区块（block）包括block header、block data和block metadata，block data包含交易记录。请问交易记录包含哪些数据单元（数据项）？**
+- **Q: 根据Fabric官方文档，区块（block）包括block header、block data和block metadata，block data包含交易记录。请问交易记录包含哪些数据单元（数据项）？**
     - ![](https://github.com/Hyperledger-TWGC/TWGC-FAQ/blob/main/fabricV1Block.png?raw=true)
