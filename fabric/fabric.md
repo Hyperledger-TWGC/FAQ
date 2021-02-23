@@ -1,6 +1,6 @@
 # Hyperledger Fabric 
 - **Q: Fabric接下来的发展方向有哪些？**
-    - ![](./fabric-roadmap.png)
+    ![](fabric-roadmap.png)
 - **Q: Ethereum面临很多安全方面的问题，请问Fabric现在是否也面临一些安全性相关的问题呢？**
     - 无论对于以太坊还是fabric或者其他的区块链框架，只要智能合约的可拓展性达到图灵完备的级别，则必然会像其他所有的软件项目一样遇到安全攻防问题。没有银弹，传统的安全审计，黑白盒穿透测试仍然可以有助于预防和解决具体项目中的问题。
 - **Q: 为何Fabric逐步将允许不同节点上的智能合约不一致**
@@ -46,4 +46,9 @@
     - TWGC Fabric国密小组收集了众多的[已知开源改造案例](https://github.com/Hyperledger-TWGC/fabric-gm-wiki/wiki/%E5%B7%B2%E7%9F%A5%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE)
     - TWGC Fabric国密小组正采取一种完全不同的路线来统一Fabric国密改造，[欢迎贡献](https://github.com/Hyperledger-TWGC/fabric-gm-wiki)
 - **Q: 根据Fabric官方文档，区块（block）包括block header、block data和block metadata，block data包含交易记录。请问交易记录包含哪些数据单元（数据项）？**
-    - ![](https://github.com/Hyperledger-TWGC/TWGC-FAQ/blob/main/fabricV1Block.png?raw=true)
+    ![](fabricV1Block.png)
+- **Q: Fabric 的账本数据放在哪里，以什么结构存放的，分别存放了些什么？**
+    - peer 的账本默认存放在 `/var/hyperledger/production`。可以通过core.yaml 当中的`peer.fileSystemPath`属性来控制
+    ![](fabric-peer-ledgersData.png)
+    - orderer 的账本默认存放在`/var/hyperledger/production/orderer`。可以通过orderer.yaml当中的`FileLedger.Location`属性来控制
+    
