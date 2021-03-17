@@ -52,3 +52,5 @@
     ![](fabric-peer-ledgersData.png)
     - orderer 的账本默认存放在`/var/hyperledger/production/orderer`。可以通过orderer.yaml当中的`FileLedger.Location`属性来控制
     
+- **Q: peer 节点的7051端口是通的，为啥7053端口不通呢？**
+    - 7053端口暴露的服务是eventHub，现在已经被ChannelEventHub代替，ChannelEventHub复用了7051端口，因此7053不再被使用了
