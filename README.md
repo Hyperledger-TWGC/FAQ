@@ -24,7 +24,9 @@ Frequently asked questions (FAQ) or Questions and Answers (Q&A), are listed ques
     - 可以参考学习材料整理[Learning Material](https://wiki.hyperledger.org/display/TWGC/Learning+Material)
     
 ## 维护者信息
-TWGC FAQ 由 TWGC "Development and Innovation 开发创新" 小组维护. 过往版本存留于https://wiki.hyperledger.org/display/TWGC/FAQ.
+TWGC FAQ 由 TWGC "Development and Innovation 开发创新" 小组维护。
+
+过往版本存留于https://wiki.hyperledger.org/display/TWGC/FAQ.
 ## TODO 
 - 迁移 TWGC/Getting+Started
 - 重构 TWGC/Learning+Material
