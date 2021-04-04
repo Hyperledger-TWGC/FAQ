@@ -29,4 +29,4 @@ TWGC FAQ 由 TWGC "Development and Innovation 开发创新" 小组维护。
 过往版本存留于https://wiki.hyperledger.org/display/TWGC/FAQ.
 ## TODO 
 - 迁移 TWGC/Getting+Started
-- 重构 TWGC/Learning+Material
+
