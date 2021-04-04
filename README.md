@@ -21,7 +21,7 @@ Frequently asked questions (FAQ) or Questions and Answers (Q&A), are listed ques
 - **Q: 对于Hyperledger国际化，我能贡献哪些内容？**
     - 包括但不限于Hyperledger下各子项目（如Fabric、Indy、Cello等）的官方文档译文、官方设计文档译文、官方博客译文、个人整理总结以及区块链相关知识的分享。具体问题可向社区提问，社区的小伙伴们都会热心解答。
 - **Q: 作为初学者，如何学习超级账本技术**
-    - 可以参考学习材料整理[Learning Material](https://wiki.hyperledger.org/display/TWGC/Learning+Material)
+    - 可以参考学习材料整理[Learning Material](https://github.com/Hyperledger-TWGC/Learning-Material)
     
 ## 维护者信息
 TWGC FAQ 由 TWGC "Development and Innovation 开发创新" 小组维护。
