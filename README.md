@@ -1,7 +1,7 @@
 # TWGC-FAQ
 Frequently asked questions (FAQ) or Questions and Answers (Q&A), are listed questions and answers, all supposed to be commonly asked in some context, and pertaining to a particular topic. The format is commonly used on email mailing lists and other online forums, where certain common questions tend to recur.
 
-TWGC FAQ is maintained by TWGC "Development and Innovation" sub-group. Historically it resides in https://wiki.hyperledger.org/display/TWGC/FAQ.
+
 
 ## General
 **Q: `Hyperledger`和`Ethereum`的区别是什么？为什么这么多企业用`Hyperledger`而不是`Ethereum`？**
@@ -23,7 +23,8 @@ TWGC FAQ is maintained by TWGC "Development and Innovation" sub-group. Historica
 - **Q: 作为初学者，如何学习超级账本技术**
     - 可以参考学习材料整理[Learning Material](https://wiki.hyperledger.org/display/TWGC/Learning+Material)
     
-    
+## 维护者信息
+TWGC FAQ 由 TWGC "Development and Innovation 开发创新" 小组维护. 过往版本存留于https://wiki.hyperledger.org/display/TWGC/FAQ.
 ## TODO 
 - 迁移 TWGC/Getting+Started
 - 重构 TWGC/Learning+Material
