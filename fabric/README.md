@@ -46,6 +46,8 @@
     - TWGC Fabric国密小组收集了众多的[已知开源改造案例](https://github.com/Hyperledger-TWGC/fabric-gm-wiki/wiki/%E5%B7%B2%E7%9F%A5%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE)
     - TWGC Fabric国密小组正采取一种完全不同的路线来统一Fabric国密改造，[欢迎贡献](https://github.com/Hyperledger-TWGC/fabric-gm-wiki)
 - **Q: 根据Fabric官方文档，区块（block）包括block header、block data和block metadata，block data包含交易记录。请问交易记录包含哪些数据单元（数据项）？**
+    - 区块体结构见图
+    
     ![](fabricV1Block.png)
 - **Q: Fabric 的账本数据放在哪里，以什么结构存放的，分别存放了些什么？**
     - peer 的账本默认存放在 `/var/hyperledger/production`。可以通过core.yaml 当中的`peer.fileSystemPath`属性来控制
