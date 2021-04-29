@@ -18,7 +18,7 @@
 - **Q: 交易如何保证无关人员不能查看，从而保证隐私呢？通过交易证书吗？ 登记证书应该是保证用户和节点的身份信息。**
     - 目前，主要通过通道、sideDB 等特性保护隐私。也可以在智能合约里通过交易发起人的证书通过合约代码逻辑做认证。此外，1.2版本引入了更细化的通道接入权限控制，详情搜索Access Control Lists (ACL)
 - **Q: Fabric性能怎么样，有没有可靠的测试报告**
-    - Hyperledger Caliper可以用于做fabric的基准测试
+    - Hyperledger Caliper可以用于做fabric的基准测试。此外TWGC也维护了一个轻量级的Fabric专用交易生成器[Tape](https://github.com/Hyperledger-TWGC/tape)
 - **Q: 目前 Fabric 的orderer相当于一个中心化的节点，感觉这与分布式和区块链有点违背？**
     - 支持多个Orderer，分布式部署实现排序服务。
     - Fabric是通过交易流程实现的PBFT，而不是通过OrdererType
