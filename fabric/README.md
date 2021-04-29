@@ -13,6 +13,8 @@
     - 目前主要检查权限策略，用户也可以自定义 ESCC。1.3版本引入的新的背书策略，使得颗粒可细化到数据库键值级别，详情可搜索关键字`key level endorsement policies`
 - **Q: putstate上传键值对的时候，放在invoke函数里的时候，提示成功，但是查询不到数据，这是为什么呢**
     - Fabric 采用两阶段交易（2 phase commit）模型，链码的执行没有错误后，链码中putState的函数结果是只会在proposal response中将key value信息添加进入写集（write set），而并不会立即写入账本，成功的信息会与proposal response一并返回，这时候如果没有proposal response提交到orderer，则不会落账，写集信息更不会写入peer，因此查询不到写集所包括的数据。
+    - 另可以参考 fabric-chaincode-go当中的注释
+    - `Invoke is called to update or query the ledger in a proposal transaction. Updated state variables are not committed to the ledger until the transaction is committed.`
 - **Q: 交易如何保证无关人员不能查看，从而保证隐私呢？通过交易证书吗？ 登记证书应该是保证用户和节点的身份信息。**
     - 目前，主要通过通道、sideDB 等特性保护隐私。也可以在智能合约里通过交易发起人的证书通过合约代码逻辑做认证。此外，1.2版本引入了更细化的通道接入权限控制，详情搜索Access Control Lists (ACL)
 - **Q: Fabric性能怎么样，有没有可靠的测试报告**
