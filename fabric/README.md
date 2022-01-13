@@ -1,6 +1,13 @@
 # Hyperledger Fabric 
 - **Q: Fabric接下来的发展方向有哪些？**
     ![](fabric-roadmap.png)
+    ![image](https://user-images.githubusercontent.com/7227589/149338953-567e9b72-d7b4-4f56-9148-417c442cb99e.png)
+    ![image](https://user-images.githubusercontent.com/7227589/149339058-4350ec3d-3e34-4e78-b539-47417d9245b3.png)
+    ![image](https://user-images.githubusercontent.com/7227589/149339138-d6ec4f5f-5347-44af-80c0-d758a4ff8b4f.png)
+    ![image](https://user-images.githubusercontent.com/7227589/149339178-a2f1222f-d2c5-4aef-95ff-3c95eb82f63c.png)
+
+
+
 - **Q: Ethereum面临很多安全方面的问题，请问Fabric现在是否也面临一些安全性相关的问题呢？**
     - 无论对于以太坊还是fabric或者其他的区块链框架，只要智能合约的可拓展性达到图灵完备的级别，则必然会像其他所有的软件项目一样遇到安全攻防问题。没有银弹，传统的安全审计，黑白盒穿透测试仍然可以有助于预防和解决具体项目中的问题。
 - **Q: 为何Fabric逐步将允许不同节点上的智能合约不一致**
