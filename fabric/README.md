@@ -74,7 +74,7 @@
     ```
     - 该错误只发生在golang chaincode中。通常是由于chaincode的源码根目录下缺少vendor目录以及所包括的第三方依赖，如果在源码中调用了非fabric的依赖，必须先将这些依赖本地化到vendor目录中，作为链码安装前的准备工作。Fabric链码实例化过程中，会基于fabric-baseenv的docker image启动一个容器，专门编译chaincode，然后会基于baseos和编译结果，制作chaincode image
 - **Q: 如何给Fabric提issue**
-    - Fabric 团队正在逐步将issue的平台从JIRA迁移往Github Issue，详情见[20210818-贡献者会议录像](https://wiki.hyperledger.org/display/fabric/Contributor+Meetings+2021?preview=%2F41590443%2F56723444%2F20210818_contributors_meeting.mp4)
+    - Fabric 团队已将issue的平台从JIRA迁移往[Github Issue](https://github.com/hyperledger/fabric/issues)，详情见[20210818-贡献者会议录像](https://wiki.hyperledger.org/display/fabric/Contributor+Meetings+2021?preview=%2F41590443%2F56723444%2F20210818_contributors_meeting.mp4)
     
 - **Q: ECert和TCert是什么**
     - Tcert 即交易证书，设计理念上说，允许发起的每一次交易都使用独立的交易证书。ECert 即Enrollment certificate。TCert与ECert的实现最早出现在0.6版本中，而在1.x时期被重新设计，通过IdeMix实现TCert，而独立的Fabric-ca将给每一个身份签发ECert，详情可参考[StackOverFlow相关问题](https://stackoverflow.com/questions/47645800/transaction-certificate-tcerts-in-hyperledger-fabric-1-0)
