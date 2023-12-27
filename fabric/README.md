@@ -51,12 +51,12 @@
         - 在1.4.x，fabric-ccenv镜像会构建链码二进制文件/Nodejs应用，以用于构建世纪的链码镜像。本质上，它只是复制了这些内容到运行时镜像里（通过配置文件里的"chaincode.golang.runtime", "chaincode.java.runtime", "chaincode.node.runtime"属性来指定）。因此，假如你的Go链码需要调用了外部共用库，你可以将他们添加到适当的基础运行时镜像里。对于Go链码来说是fabric-baseos镜像，对于Nodejs链码来说是fabric-baseimage
         - 在2.0中，Nodejs链码也是使用的fabric-nodeenv作为运行时镜像
 
-- **Q: Fabric相关的代码仓库迁移到github这个过程的现状**
-    - 已经完成
 - **Q: Fabric 的国密改造案例**
     - TWGC Fabric国密小组收集了众多的[已知开源改造案例](https://github.com/Hyperledger-TWGC/fabric-gm-wiki/wiki/%E5%B7%B2%E7%9F%A5%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE)
     - TWGC Fabric国密小组正采取一种完全不同的路线来统一Fabric国密改造，[欢迎贡献](https://github.com/Hyperledger-TWGC/fabric-gm-wiki)
 - **Q: 根据Fabric官方文档，区块（block）包括block header、block data和block metadata，block data包含交易记录。请问交易记录包含哪些数据单元（数据项）？**
+    - 社区有很多优秀的项目对区块作了解析，如下
+        - https://github.com/Deeptiman/blockreader
     - 区块体结构见图
     
     ![](fabricV1Block.png)
